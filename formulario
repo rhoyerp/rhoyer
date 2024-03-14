@@ -8,7 +8,7 @@
 </head>
 <body>
     <h1>Registro de Alumnos</h1>
-    <form action="guardar_registro.php" method="POST">
+    <form action="guardar_registro.php" method="post">
         <label for="id">ID:</label>
         <input type="text" id="id" name="id" required><br>
 
@@ -29,5 +29,8 @@
 
         <input type="submit" value="Guardar">
     </form>
+    <?php
+    include("guardar_registro.php");  
+    ?>
 </body>
 </html>
