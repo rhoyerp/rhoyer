@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Registro de Alumnos</h1>
-    <form action="guardar_registro.php" method="post">
+    <form action="../logica/guardar_registro.php" method="post">
         <label for="id">ID:</label>
         <input type="text" id="id" name="id" required><br>
 
