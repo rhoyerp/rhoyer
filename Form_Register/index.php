@@ -9,7 +9,7 @@
 </head>
 <body>
     <h1>Registro de Alumnos</h1>
-    <form action="../logica/guardar_registro.php" method="post">
+    <form method="post">
         <label for="id">ID:</label>
         <input type="text" id="id" name="id" required><br>
 
@@ -22,13 +22,13 @@
         <label for="apellido">Apellido:</label>
         <input type="text" id="apellido" name="apellido" required><br>
 
-        <label for="numero_telefono">Teléfono:</label>
-        <input type="tel" id="numero_telefono" name="numero_telefono" required><br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" required><br>
 
         <label for="correo">Correo:</label>
         <input type="email" id="correo" name="correo" required><br>
 
-        <input type="submit" value="Guardar">
+        <input type="submit" name="registro" value="Guardar">
     </form>
     <?php
     include("../logica/guardar_registro.php");  
