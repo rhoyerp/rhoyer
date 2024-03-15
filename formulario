@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+</head>
+<body>
+    <h1>Agregar Registro</h1>
+    <form action="guardar.php" method="post">
+        <!-- Campos para ingresar datos -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa el nombre"><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ingresa el apellido"><br>
+
+        <!-- Botones para eliminar o actualizar -->
+        <input type="submit" name="agregar" value="Agregar registro">
+        <input type="submit" name="eliminar" value="Eliminar registro">
+        <input type="submit" name="actualizar" value="Actualizar registro">
+    </form>
+</body>
+</html>
