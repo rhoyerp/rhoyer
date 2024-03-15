@@ -19,40 +19,47 @@
     ?>
     <form method="post">
         <labelfor="id_usuario">ID del usuario:</label>
-        <input type="text" name="id" id="id" required>
-        <br>
-        <input type="submit" name="eliminar" value="Borrar usuario">
+            <input type="text" name="id" id="id" required>
+            <br>
+            <input type="submit" name="eliminar" value="Borrar usuario">
     </form>
     <?php
     include("./logica/eliminacion.php");
     ?>
-    <!-- <form method="post">
+    <form method="post">
         <labelfor="id_usuario">ID del usuario:</label>
-        <input type="text" name="id" id="id" required>
-        <br>
-        <input type="submit" name="modificar" value="Modificar usuario">
+            <input type="text" name="id" id="id" required>
+            <br>
+            <input type="submit" name="modificar" value="Modificar usuario">
     </form>
+    <?php
+    include("./logica/autenticacion.php");
+    ?>
+    <form method="post">
+        <labelfor="id_usuario">ID del usuario:</label>
+            <input type="text" name="id" id="id" required>
+            <br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
+            <br>
+            <label for="cedula">cedula:</label>
+            <input type="text" name="cedula" id="cedula" required>
+            <br>
+            <label for="telefono">telefono:</label>
+            <input type="text" name="telefono" id="telefono" required>
+            <br>
+            <label for="correo">Email:</label>
+            <input type="text" name="correo" id="correo" required>
+            <br>
 
-    <form  method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" name="nombre" id="nombre"  required>
-        <br>
-        <label for="apellido">Apellido:</label>
-        <input type="text" name="apellido" id="apellido"  required>
-        <br>
-        <label for="cedula">cedula:</label>
-        <input type="text" name="cedula" id="cedula"  required>
-        <br>
-        <label for="telefono">telefono:</label>
-        <input type="text" name="telefono" id="telefono"  required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="text" name="email" id="email"  required>
-        <br>
-
-        <input type="submit" value="Modificar usuario">
-    </form> -->
- 
+            <input type="submit" name="modificacion" value="Modificar usuario">
+    </form>
+    <?php
+    include("./logica/modificacion.php");
+    ?>
 </body>
 
 </html>

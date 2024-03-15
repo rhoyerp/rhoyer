@@ -1,22 +1,22 @@
-   <!-- <?php
+<?php
 
 // Conectar a la base de datos
 include("con_db.php");
-if (isset($_POST['modificar']))
+if (isset($_POST['modificacion'])) {
 
-// Comprobar si se ha enviado el formulario
+    // Comprobar si se ha enviado el formulario
     // Obtener los datos del usuario
     $id = trim($_POST['id']);
-    $cedula = trim($_POST['cedula']);
     $nombre = trim($_POST['nombre']);
     $apellido = trim($_POST['apellido']);
+    $cedula = trim($_POST['cedula']);
     $telefono = trim($_POST['telefono']);
     $correo = trim($_POST['correo']);
 
     // Actualizar los datos del usuario
-    $sql = "UPDATE estudiantes SET nombre = ?, correo = ? apellido = ? telefono = ? cedula = ? WHERE id = ?";
+    $sql = "UPDATE estudiantes SET nombre = ?, apellido = ?, telefono = ?, cedula = ?, correo = ? WHERE id = ?";
     $stmt = $conex->prepare($sql);
-    $stmt->bind_param('ssi', $nombre, $correo,$apellido, $telefono, $cedula, $id, );
+    $stmt->bind_param('ssissi', $nombre, $apellido, $telefono, $cedula, $correo, $id);
     $stmt->execute();
 
     if ($stmt->affected_rows > 0) {
@@ -28,20 +28,5 @@ if (isset($_POST['modificar']))
     $stmt->close();
 
 
-// Obtener los datos del usuario a modificar
-$id = $_GET['id'];
-$sql = "SELECT * FROM estudiantes WHERE id_ = ?";
-$stmt = $conex->prepare($sql);
-$stmt->bind_param('i', $id);
-$stmt->execute();
-$resultado = $stmt->get_result();
-
-if ($resultado->num_rows > 0) {
-    $usuario = $resultado->fetch_assoc();
-} else {echo "<p>No se ha encontrado el usuario.</p>";
-    exit();
+    // Obtener los datos del usuario a modificar
 }
-
-$stmt->close();
-
-?> -->
