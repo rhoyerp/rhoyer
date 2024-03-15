@@ -1,9 +1,14 @@
 body{
     background-color: rgb(149, 221, 217);
+    margin: 20px;
 }
 label{
 color: rgb(20, 34, 46);
 }
 label{
     font-size: 20px;
+}
+input[type="text"]{
+    width: 50%;
+    margin-bottom:20px;
 }
