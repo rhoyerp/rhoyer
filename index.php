@@ -12,10 +12,11 @@
 <body>
     <h1 class="text-center">consulta de Alumnos</h1>
     <form action="" method="post">
-        <button type="submit" name="SelectDeal" class="btn btn-primary mx-auto d-block">1st Deal</button>
+        <button type="submit" name="SelectDeal" class="btn btn-primary mx-auto d-block">Actualizar</button>
         <input type="hidden" name="record_id" value="<?php echo $row['id']; ?>" />
         <input type="hidden" name="1stdeal" value="1" />
     </form>
+    <a href="./Form_Register/" class="btn btn-primary mx-auto d-block">Registro</a>
 
     <?php
     include("./logica/consulta.php");
@@ -30,40 +31,31 @@
     <?php
     include("./logica/eliminacion.php");
     ?>
+    
     <form method="post">
         <div class="form-group">
             <label for="id_usuario">ID del usuario:</label>
-            <input type="text" name="id" id="id" class="form-control" required>
-        </div>
-        <input type="submit" name="modificar" value="Modificar usuario" class="btn btn-primary">
-    </form>
-    <?php
-    include("./logica/autenticacion.php");
-    ?>
-    <form method="post">
-        <div class="form-group">
-            <label for="id_usuario">ID del usuario:</label>
-            <input type="text" name="id" id="id" class="form-control" required>
+            <input type="text" maxlength="10" name="id" id="id" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="nombre">Nombre:</label>
-            <input type="text" name="nombre" id="nombre" class="form-control" required>
+            <input type="text" maxlength="20" name="nombre" id="nombre" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="apellido">Apellido:</label>
-            <input type="text" name="apellido" id="apellido" class="form-control" required>
+            <input type="text" maxlength="20" name="apellido" id="apellido" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="cedula">cedula:</label>
-            <input type="text" name="cedula" id="cedula" class="form-control" required>
+            <input type="text" maxlength="16" name="cedula" id="cedula" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="telefono">telefono:</label>
-            <input type="text" name="telefono" id="telefono" class="form-control" required>
+            <input type="text" maxlength="16" name="telefono" id="telefono" class="form-control" required>
         </div>
         <div class="form-group">
             <label for="correo">Email:</label>
-            <input type="text" name="correo" id="correo" class="form-control" required>
+            <input type="text" maxlength="33" name="correo" id="correo" class="form-control" required>
         </div>
 
         <input type="submit" name="modificacion" value="Modificar usuario" class="btn btn-primary">

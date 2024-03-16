@@ -43,7 +43,7 @@
   <div class="form-group">
     <label for="telefono" class="col-sm-2 control-label">Teléfono:</label>
     <div class="col-sm-10">
-      <input type="tel" class="form-control" id="telefono" name="telefono" required>
+      <input type="text" class="form-control" id="telefono" name="telefono" required>
     </div>
   </div>
 
@@ -60,6 +60,9 @@
     </div>
   </div>
 </form>
+<br/>
+<a href="../" class="btn btn-primary mx-auto d-block">Volver a la pagina pricipal</a>
+
     <?php
     include("../logica/guardar_registro.php");  
     ?>
