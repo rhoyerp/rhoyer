@@ -15,42 +15,42 @@
   <div class="form-group">
     <label for="id" class="col-sm-2 control-label">ID:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="id" name="id" required>
+      <input type="text" maxlength="10" class="form-control" id="id" name="id" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="cedula" class="col-sm-2 control-label">Cédula:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="cedula" name="cedula" required>
+      <input type="text" maxlength="20" class="form-control" id="cedula" name="cedula" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="nombre" class="col-sm-2 control-label">Nombre:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="nombre" name="nombre" required>
+      <input type="text" maxlength="20" class="form-control" id="nombre" name="nombre" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="apellido" class="col-sm-2 control-label">Apellido:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="apellido" name="apellido" required>
+      <input type="text" maxlength="16" class="form-control" id="apellido" name="apellido" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="telefono" class="col-sm-2 control-label">Teléfono:</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="telefono" name="telefono" required>
+      <input type="text" maxlength="16" class="form-control" id="telefono" name="telefono" required>
     </div>
   </div>
 
   <div class="form-group">
     <label for="correo" class="col-sm-2 control-label">Correo:</label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="correo" name="correo" required>
+      <input type="email" maxlength="33" class="form-control" id="correo" name="correo" required>
     </div>
   </div>
 <br/>
